@@ -111,3 +111,5 @@ AGTCA" | wc -l
 0
 
 The R1 adapter had a huge amount of matches in R1, and none in R2. I ran similar commands for all other combinations for all 4 files, and found the same results. 
+
+Given this, I read the cutadapter documentation and decided to use their paired end options. The details of my cutadapt command are in the cutadapt.sh bash script. 

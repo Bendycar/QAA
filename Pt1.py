@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import argparse
 import bioinfo
-import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 import gzip

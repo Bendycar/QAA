@@ -111,3 +111,35 @@ AGTCA" | wc -l
 0
 
 The R1 adapter had a huge amount of matches in R1, and none in R2. I ran similar commands for all other combinations for all 4 files, and found the same results. 
+
+### 9/7/24:
+
+Working on setting up the trimmomatic commands. I realized that I had to tell it if the files are gzipped or not, and I wasn't sure how cutadapt outputs its results. After a little googling, I found that the "file: unix command will tell me this.
+
+	$file Undetermined_R1_cut
+	Undetermined_R1_cut: ASCII text
+
+So it seems to be uncompressed. However, I will ask trimmomatic to compress it in the output. 
+
+I ran trimmomatic on the 4 files as paired-end data (using the PE flag in trimmomatic). As requested, I specified the following parameters:
+
+LEADING: quality of 3
+TRAILING: quality of 3
+SLIDING WINDOW: window size of 5 and required quality of 15
+MINLENGTH: 35 bases
+
+And used the -baseout parameter to allow trimmomatic to outmatically name my output files. Therefore, the full command looked like:
+
+/usr/bin/time -v trimmomatic PE Undetermined_R1_cut Undetermined_R2_cut -baseout Undetermined_trimmed.fastq.gz \
+LEADING:3 \
+TRAILING:3 \
+SLIDINGWINDOW:5:15 \
+MINLEN:35
+
+And the same for my other set of reads. 
+
+I wrote a quick python script (trimmomatic_plots.py) for generating plots of the R1 and R2 reads side by side for each set of trimmed files.
+Looking at these graphs, it is clear that the R2 reads are trimmed more extensively than R1. This makes sense -- we would expect R2 to be lower quality than R1, mostly due to degradation of the reagents used over time. 
+
+##PART 3
+

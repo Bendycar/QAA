@@ -112,6 +112,12 @@ AGTCA" | wc -l
 
 The R1 adapter had a huge amount of matches in R1, and none in R2. I ran similar commands for all other combinations for all 4 files, and found the same results. 
 
+To determine the proportion of reads with adapters trimmed, I looked at the slurm output for cutadapt and found this:
+
+  Read 1 with adapter:                 543,021 (3.7%)
+  Read 2 with adapter:                 607,660 (4.1%)
+
+
 ### 9/7/24:
 
 Working on setting up the trimmomatic commands. I realized that I had to tell it if the files are gzipped or not, and I wasn't sure how cutadapt outputs its results. After a little googling, I found that the "file: unix command will tell me this.
@@ -143,6 +149,39 @@ Looking at these graphs, it is clear that the R2 reads are trimmed more extensiv
 
 ##PART 3
 
+I installed the required packages from conda:
 
+ 	$ conda install star
+ 	$ conda install numpy
+ 	$ conda install matplotlib
+ 	$ conda install htseq
 
-Given this, I read the cutadapter documentation and decided to use their paired end options. The details of my cutadapt command are in the cutadapt.sh bash script. 
+Then, I downloaded the "primary assembly" file for the mouse genome from ensemble:
+
+	$ wget https://ftp.ensembl.org/pub/release-112/fasta/mus_musculus/dna/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa.gz
+
+But this was talking forever, so I cancelled the job to get my command line back, and instead put it into a quick little script called "download_mouse.sh". 
+
+Luckily the GTF file is much smaller, so I was able to download that straight from the command line.
+
+	$ wget https://ftp.ensembl.org/pub/release-112/gtf/mus_musculus/Mus_musculus.GRCm39.112.gtf.gz
+
+I gunzipped both of these files, then copied my "STAR_Database.sh" script from PS8. I changed the relevent file paths, then ran it on sbatch.
+
+After generating the STAR Database, it is time to align my reads. I copied over the STAR_Alignment bash script from PS8, and changed only the file paths and output names.
+
+This ran significantly faster than I expected -- only about 50 seconds for each. However, it produced a SAM file of reasonable size and reported exit status 0, so I am going to trust the results.
+
+Now, it's time to count the aligned / unmapped reads. I copied in my "Count_Alignment.py" script from PS8, added argparse to take file inputs, then ran it on both files. I got the following results:
+
+	$ ./Count_Alignment.py -f Undetermined_S0_L008Aligned.out.sam 
+
+		Number of aligned reads: 163734
+		Number of unmapped reads: 4858770
+
+	$ ./Count_Alignment.py -f 7_2E_fox_S6_L008Aligned.out.sam 
+
+		Number of aligned reads: 9424733
+		Number of unmapped reads: 340673
+
+These results are interesting, especially the ratio of aligned to unmapped reads in the Undetermined file. It seems to make sense that the "Undetermined" reads would not map well, however, so I'm not terribly worried quite yet (although I will be if it doesn't match with htseq).

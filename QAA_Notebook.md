@@ -143,3 +143,6 @@ Looking at these graphs, it is clear that the R2 reads are trimmed more extensiv
 
 ##PART 3
 
+
+
+Given this, I read the cutadapter documentation and decided to use their paired end options. The details of my cutadapt command are in the cutadapt.sh bash script. 

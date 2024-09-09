@@ -114,8 +114,13 @@ The R1 adapter had a huge amount of matches in R1, and none in R2. I ran similar
 
 To determine the proportion of reads with adapters trimmed, I looked at the slurm output for cutadapt and found this:
 
+Undetermined:
   Read 1 with adapter:                 543,021 (3.7%)
   Read 2 with adapter:                 607,660 (4.1%)
+
+Fox:
+  Read 1 with adapter:                 173,473 (3.3%)
+  Read 2 with adapter:                 212,512 (4.0%)
 
 
 ### 9/7/24:
@@ -147,7 +152,9 @@ And the same for my other set of reads.
 I wrote a quick python script (trimmomatic_plots.py) for generating plots of the R1 and R2 reads side by side for each set of trimmed files.
 Looking at these graphs, it is clear that the R2 reads are trimmed more extensively than R1. This makes sense -- we would expect R2 to be lower quality than R1, mostly due to degradation of the reagents used over time. 
 
-##PART 3
+## PART 3
+
+### 9/8/24:
 
 I installed the required packages from conda:
 
@@ -185,3 +192,29 @@ Now, it's time to count the aligned / unmapped reads. I copied in my "Count_Alig
 		Number of unmapped reads: 340673
 
 These results are interesting, especially the ratio of aligned to unmapped reads in the Undetermined file. It seems to make sense that the "Undetermined" reads would not map well, however, so I'm not terribly worried quite yet (although I will be if it doesn't match with htseq).
+
+After reading the documentation for Htseq-count, it seems like all you need to provide it is in gtf file, sam file, and a flag for strandedness. I heard from Lauren that the default is to output to standard out, so I also included a ">" to dump the results into a file instead. I created a script called "Htseq.sh" to run all 4 runs, then called it a day to let it do its thing.
+
+### 9/9/24
+
+I took a look at my Htseq output files, which seem to be a familiar list of genes and their corresponding counts of matched reads. I decided to run a series of bash commands to assess the number of mapped vs total reads on each file:
+
+	$ cat fox_reverse.out | grep -v "^__" | awk '{sum+= $2} END{print sum}'
+	$ cat fox_reverse.out | awk '{sum+= $2} END{print sum}'
+
+I applied the same combination of commands to every output file, to produce the following table:
+
+| Htseq Metric |  Fox Reverse     | Fox Forward | Undetermined Reverse | Undetermined Forward
+| Mapped reads | 4,026,702 | 171,207 | 17,097 | 1,350
+| Total reads  |    4,882,703   | 4,882,703    | 2,511,252 | 2,511,252
+| % mapped | 82.46%  |   3.51%  | 0.68% | 0.054%
+
+I also created a similar table for my python script data:
+
+
+| Script Metric |  Fox | Undetermined
+| Mapped reads | 9,424,733 | 163,734 
+| Total reads  |    9,765,406   | 5,022,504
+| % mapped | 96.51%  |   3.26%  
+
+There are a number of interesting things to note in these tables. 

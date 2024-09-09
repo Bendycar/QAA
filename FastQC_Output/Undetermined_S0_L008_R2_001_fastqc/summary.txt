@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Undetermined_S0_L008_R2_001.fastq.gz
+PASS	Per base sequence quality	Undetermined_S0_L008_R2_001.fastq.gz
+WARN	Per tile sequence quality	Undetermined_S0_L008_R2_001.fastq.gz
+PASS	Per sequence quality scores	Undetermined_S0_L008_R2_001.fastq.gz
+WARN	Per base sequence content	Undetermined_S0_L008_R2_001.fastq.gz
+FAIL	Per sequence GC content	Undetermined_S0_L008_R2_001.fastq.gz
+PASS	Per base N content	Undetermined_S0_L008_R2_001.fastq.gz
+PASS	Sequence Length Distribution	Undetermined_S0_L008_R2_001.fastq.gz
+WARN	Sequence Duplication Levels	Undetermined_S0_L008_R2_001.fastq.gz
+FAIL	Overrepresented sequences	Undetermined_S0_L008_R2_001.fastq.gz
+PASS	Adapter Content	Undetermined_S0_L008_R2_001.fastq.gz

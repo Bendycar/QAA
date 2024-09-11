@@ -205,6 +205,7 @@ I took a look at my Htseq output files, which seem to be a familiar list of gene
 I applied the same combination of commands to every output file, to produce the following table:
 
 | Htseq Metric |  Fox Reverse     | Fox Forward | Undetermined Reverse | Undetermined Forward
+| -------- | ------- | ------- | ------- | -------
 | Mapped reads | 4,026,702 | 171,207 | 17,097 | 1,350
 | Total reads  |    4,882,703   | 4,882,703    | 2,511,252 | 2,511,252
 | % mapped | 82.46%  |   3.51%  | 0.68% | 0.054%
@@ -213,8 +214,34 @@ I also created a similar table for my python script data:
 
 
 | Script Metric |  Fox | Undetermined
+| -------- | ------- | ------- |
 | Mapped reads | 9,424,733 | 163,734 
 | Total reads  |    9,765,406   | 5,022,504
 | % mapped | 96.51%  |   3.26%  
 
-There are a number of interesting things to note in these tables. 
+There are a number of interesting things to note in these tables. First, I can confirm that the sum of the total reads for each forward and reverse file in Htseq matches the total reads of each file as analyzed by my script, a reassuring finding. Second, we can note the clear discrepency in matched reads between the "Fox" file and the "Undetermined" file, the reason for which should be obvious from the name of the latter. The "Undetermined" data are a collection of from reads whose biological source that could not be identified, so it makes perfect sense that they do not map well to a single genome. Finally, there is a clear difference is percent of mapped reads between the Htseq output and my python script's output. This is likey due to the fact that the Htseq algorithm also takes in a GTF file as input, whereas mine only uses the information in the SAM file. Looking at the tail of the Htseq output, we can see there are several criteria for which a read will be counted as unmapped:
+
+	__no_feature    4320237
+	__ambiguous     4091
+	__too_low_aQual 13136
+	__not_aligned   163337
+	__alignment_not_unique  210695
+
+In the documentation available online (https://htseq.readthedocs.io/en/release_0.11.1/count.html), the "not aligned" parameter is described as "reads in the SAM file without alignment" -- which is exactly what our python script is looking for. Therefore, it appears that all the other fields use information from the GTF file that our script is not privy to. I believe this is the primary source of the discrepency between my output and their's. To test this, I wanted to see if the sum of all their mapped reads plus everything except the "not aligned" field would equal my number of mapped reads: 4,026,702 + 171,207 + 390065 + 78768 + 13136 + 210695 + 4320237 + 4091 + 13136 + 210695 = 9,438,732
+
+My number of mapped reads: 9,424,733
+
+9,424,733 - 9,438,732 = -13,999
+
+So close and yet so far -- after correcting for information contained within the GTF file, my script actually reports about 14,000 fewer mapped reads than Htseq. The only explanation I can think of for this discrepency is that my script eliminates secondary alignments, which may be a subset of the "alignment not unique" field -- therefore, some proportion of those reads were not counted by both my script and the Htseq algorithm, and therefore should not have been added to the corrected total.
+
+To determine if the data are strand specific, I consulted the internet. According to Devon Ryna on biostars (https://www.biostars.org/p/205987/), who states that the option with more reads mapped will be the correct option. In our case, this is likely reverse: in the "Fox" file, 82.46% of reads mapped under the reverse setting, whereas only 3.51% mapped in the forward. For "Undetermined", this was a little more unclear -- only .68% mapped in reverse, and .054% forward. Although this is technically a large change proportionally, I don't think this should be interpreted as a significant difference. Instead, I believe this is again indicative of the fact that these data come from many different sources, and can't be reliably mapped to a genome. 
+
+
+
+
+
+
+Note to self for later: The "splice-aware" description of STAR refers to the fact that we are attempting to align RNAseq data to a reference genome. Because introns have been spliced out, we may capture a read of mRNA that spans across exons. The splice aware algorithm can account for this by aligning such a read over the gap created by an intron in the reference genome. 
+
+Things to review: Strandedness in general, what exactly is a "feature"

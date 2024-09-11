@@ -20,8 +20,8 @@ with gzip.open(file, mode="rt") as fh1:
             else:
                 lengths[len(line)] = 1
 
-x1 = list(lengths.keys())
-y1 = list(lengths.values())
+x1 = sorted(list(lengths.keys()))
+y1 = sorted(list(lengths.values()))
 
 file = files[1]
 
@@ -37,19 +37,20 @@ with gzip.open(file, mode="rt") as fh1:
             else:
                 lengths[len(line)] = 1
 
-x2 = list(lengths.keys())
-y2 = list(lengths.values())
+x2 = sorted(list(lengths.keys()))
+y2 = sorted(list(lengths.values()))
 
 title = f"{file.split("_")[0]}_S0_L008"
 
 fig, ax = plt.subplots()       
-ax.bar(x1,y1, alpha = .5, color = "cornflowerblue", label = "R1")
-ax.bar(x2,y2, alpha = .5, color = "fuchsia", label = "R2") 
+ax.plot(x1,y1, alpha = .5, color = "cornflowerblue", label = "R1")
+ax.plot(x2,y2, alpha = .5, color = "fuchsia", label = "R2") 
+ax.set_yscale('log')
 ax.legend()
 ax.set_xlabel("Read length")
 ax.set_ylabel("Count")
-plt.title(f"Read length distribution of {title} across R1 and R2")
-plt.savefig(f"{title}_length_distribution.png") 
+#plt.title(f"Read length distribution of {title} across R1 and R2")
+plt.savefig(f"{title}_length_distribution_line.png") 
 
 
 file = files[2]
@@ -66,8 +67,8 @@ with gzip.open(file, mode="rt") as fh1:
             else:
                 lengths[len(line)] = 1
 
-x1 = list(lengths.keys())
-y1 = list(lengths.values())
+x1 = sorted(list(lengths.keys()))
+y1 = sorted(list(lengths.values()))
 
 file = files[3]
 
@@ -83,17 +84,18 @@ with gzip.open(file, mode="rt") as fh1:
             else:
                 lengths[len(line)] = 1
 
-x2 = list(lengths.keys())
-y2 = list(lengths.values())
+x2 = sorted(list(lengths.keys()))
+y2 = sorted(list(lengths.values()))
 
 title = f"{file.split("_")[0]}_S6_L008"
 
 
 fig, ax = plt.subplots()       
-ax.bar(x1,y1, alpha = .5, color = "cornflowerblue", label = "R1")
-ax.bar(x2,y2, alpha = .5, color = "fuchsia", label = "R2") 
+ax.plot(x1,y1, alpha = .5, color = "cornflowerblue", label = "R1")
+ax.plot(x2,y2, alpha = .5, color = "fuchsia", label = "R2") 
+ax.set_yscale('log')
 ax.legend()
 ax.set_xlabel("Read length")
 ax.set_ylabel("Count")
-plt.title(f"Read length distribution of {title} across R1 and R2")
-plt.savefig(f"{title}_length_distribution.png") 
+#plt.title(f"Read length distribution of {title} across R1 and R2")
+plt.savefig(f"{title}_length_distribution_line.png") 

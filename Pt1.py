@@ -38,9 +38,10 @@ title = just_fastq.split(".")[0] #Just removes the ".fastq.gz"
 
 fig, ax = plt.subplots()             
 ax.plot(x,y) 
+plt.ylim(bottom=0, top=41)
 ax.set_xlabel("Nucleotide position")
 ax.set_ylabel("Average Q-Score across all reads")
-plt.title(f"Average Q-Score at each nucleotide position across all reads of {title}")
+#plt.title(f"Average Q-Score at each nucleotide position across all reads of {title}")
 plt.savefig(f"{title}_distribution.png") #Should be 'R1_distribution.png' etc
         
 

@@ -1,0 +1,423 @@
+# packages in environment at /projects/bgmp/bcarr/miniforge3/envs/QAA:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                 conda_forge    conda-forge
+_openmp_mutex             4.5                       2_gnu    conda-forge
+alsa-lib                  1.2.12               h4ab18f5_0    conda-forge
+brotli                    1.1.0                hb9d3cd8_2    conda-forge
+brotli-bin                1.1.0                hb9d3cd8_2    conda-forge
+bzip2                     1.0.8                h4bc722e_7    conda-forge
+ca-certificates           2024.8.30            hbcca054_0    conda-forge
+cairo                     1.18.0               hebfffa5_3    conda-forge
+certifi                   2024.8.30          pyhd8ed1ab_0    conda-forge
+contourpy                 1.3.0           py312h68727a3_1    conda-forge
+cycler                    0.12.1             pyhd8ed1ab_0    conda-forge
+dbus                      1.13.6               h5008d03_3    conda-forge
+double-conversion         3.3.0                h59595ed_0    conda-forge
+expat                     2.6.2                h59595ed_0    conda-forge
+fastqc                    0.12.1               hdfd78af_0    bioconda
+font-ttf-dejavu-sans-mono 2.37                 hab24e00_0    conda-forge
+font-ttf-inconsolata      3.000                h77eed37_0    conda-forge
+font-ttf-source-code-pro  2.038                h77eed37_0    conda-forge
+font-ttf-ubuntu           0.83                 h77eed37_2    conda-forge
+fontconfig                2.14.2               h14ed4e7_0    conda-forge
+fonts-conda-ecosystem     1                             0    conda-forge
+fonts-conda-forge         1                             0    conda-forge
+fonttools                 4.53.1          py312h66e93f0_1    conda-forge
+freetype                  2.12.1               h267a509_2    conda-forge
+giflib                    5.2.2                hd590300_0    conda-forge
+graphite2                 1.3.13            h59595ed_1003    conda-forge
+harfbuzz                  9.0.0                hda332d3_1    conda-forge
+icu                       75.1                 he02047a_0    conda-forge
+keyutils                  1.6.1                h166bdaf_0    conda-forge
+kiwisolver                1.4.5           py312h68727a3_2    conda-forge
+krb5                      1.21.3               h659f571_0    conda-forge
+lcms2                     2.16                 hb7c19ff_0    conda-forge
+ld_impl_linux-64          2.40                 hf3520f5_7    conda-forge
+lerc                      4.0.0                h27087fc_0    conda-forge
+libblas                   3.9.0           23_linux64_openblas    conda-forge
+libbrotlicommon           1.1.0                hb9d3cd8_2    conda-forge
+libbrotlidec              1.1.0                hb9d3cd8_2    conda-forge
+libbrotlienc              1.1.0                hb9d3cd8_2    conda-forge
+libcblas                  3.9.0           23_linux64_openblas    conda-forge
+libclang-cpp18.1          18.1.8          default_hf981a13_3    conda-forge
+libclang13                18.1.8          default_h9def88c_3    conda-forge
+libcups                   2.3.3                h4637d8d_4    conda-forge
+libdeflate                1.21                 h4bc722e_0    conda-forge
+libdrm                    2.4.123              hb9d3cd8_0    conda-forge
+libedit                   3.1.20191231         he28a2e2_2    conda-forge
+libegl                    1.7.0                ha4b6fd6_0    conda-forge
+libexpat                  2.6.2                h59595ed_0    conda-forge
+libffi                    3.4.2                h7f98852_5    conda-forge
+libgcc                    14.1.0               h77fa898_1    conda-forge
+libgcc-ng                 14.1.0               h69a702a_1    conda-forge
+libgfortran               14.1.0               h69a702a_1    conda-forge
+libgfortran-ng            14.1.0               h69a702a_1    conda-forge
+libgfortran5              14.1.0               hc5f4f2c_1    conda-forge
+libgl                     1.7.0                ha4b6fd6_0    conda-forge
+libglib                   2.80.3               h315aac3_2    conda-forge
+libglvnd                  1.7.0                ha4b6fd6_0    conda-forge
+libglx                    1.7.0                ha4b6fd6_0    conda-forge
+libgomp                   14.1.0               h77fa898_1    conda-forge
+libiconv                  1.17                 hd590300_2    conda-forge
+libjpeg-turbo             3.0.0                hd590300_1    conda-forge
+liblapack                 3.9.0           23_linux64_openblas    conda-forge
+libllvm18                 18.1.8               h8b73ec9_2    conda-forge
+libnsl                    2.0.1                hd590300_0    conda-forge
+libopenblas               0.3.27          pthreads_hac2b453_1    conda-forge
+libpciaccess              0.18                 hd590300_0    conda-forge
+libpng                    1.6.43               h2797004_0    conda-forge
+libpq                     16.4                 h2d7952a_1    conda-forge
+libsqlite                 3.46.1               hadc24fc_0    conda-forge
+libstdcxx                 14.1.0               hc0a3c3a_1    conda-forge
+libstdcxx-ng              14.1.0               h4852527_1    conda-forge
+libtiff                   4.6.0                h46a8edc_4    conda-forge
+libuuid                   2.38.1               h0b41bf4_0    conda-forge
+libwebp-base              1.4.0                hd590300_0    conda-forge
+libxcb                    1.16                 hb9d3cd8_1    conda-forge
+libxcrypt                 4.4.36               hd590300_1    conda-forge
+libxkbcommon              1.7.0                h2c5496b_1    conda-forge
+libxml2                   2.12.7               he7c6b58_4    conda-forge
+libxslt                   1.1.39               h76b75d6_0    conda-forge
+libzlib                   1.3.1                h4ab18f5_1    conda-forge
+matplotlib                3.9.2           py312h7900ff3_0    conda-forge
+matplotlib-base           3.9.2           py312h854627b_0    conda-forge
+munkres                   1.1.4              pyh9f0ad1d_0    conda-forge
+mysql-common              9.0.1                h70512c7_0    conda-forge
+mysql-libs                9.0.1                ha479ceb_0    conda-forge
+ncurses                   6.5                  he02047a_1    conda-forge
+numpy                     2.1.0           py312h58c1407_1    conda-forge
+openjdk                   22.0.1               h8651b0f_1    conda-forge
+openjpeg                  2.5.2                h488ebb8_0    conda-forge
+openssl                   3.3.1                hb9d3cd8_3    conda-forge
+packaging                 24.1               pyhd8ed1ab_0    conda-forge
+pcre2                     10.44                hba22ea6_2    conda-forge
+perl                      5.32.1          7_hd590300_perl5    conda-forge
+pillow                    10.4.0          py312h287a98d_0    conda-forge
+pip                       24.2               pyh8b19718_1    conda-forge
+pixman                    0.43.2               h59595ed_0    conda-forge
+pthread-stubs             0.4               h36c2ea0_1001    conda-forge
+pyparsing                 3.1.4              pyhd8ed1ab_0    conda-forge
+pyside6                   6.7.2           py312hb5137db_2    conda-forge
+python                    3.12.5          h2ad013b_0_cpython    conda-forge
+python-dateutil           2.9.0              pyhd8ed1ab_0    conda-forge
+python_abi                3.12                    5_cp312    conda-forge
+qhull                     2020.2               h434a139_5    conda-forge
+qt6-main                  6.7.2                hb12f9c5_5    conda-forge
+readline                  8.2                  h8228510_1    conda-forge
+setuptools                73.0.1             pyhd8ed1ab_0    conda-forge
+six                       1.16.0             pyh6c4a22f_0    conda-forge
+tk                        8.6.13          noxft_h4845f30_101    conda-forge
+tornado                   6.4.1           py312h66e93f0_1    conda-forge
+tzdata                    2024a                h8827d51_1    conda-forge
+wayland                   1.23.1               h3e06ad9_0    conda-forge
+wheel                     0.44.0             pyhd8ed1ab_0    conda-forge
+xcb-util                  0.4.1                hb711507_2    conda-forge
+xcb-util-cursor           0.1.4                h4ab18f5_2    conda-forge
+xcb-util-image            0.4.0                hb711507_2    conda-forge
+xcb-util-keysyms          0.4.1                hb711507_0    conda-forge
+xcb-util-renderutil       0.3.10               hb711507_0    conda-forge
+xcb-util-wm               0.4.2                hb711507_0    conda-forge
+xkeyboard-config          2.42                 h4ab18f5_0    conda-forge
+xorg-fixesproto           5.0               h7f98852_1002    conda-forge
+xorg-inputproto           2.3.2             h7f98852_1002    conda-forge
+xorg-kbproto              1.0.7             h7f98852_1002    conda-forge
+xorg-libice               1.1.1                hd590300_0    conda-forge
+xorg-libsm                1.2.4                h7391055_0    conda-forge
+xorg-libx11               1.8.9                hb711507_1    conda-forge
+xorg-libxau               1.0.11               hd590300_0    conda-forge
+xorg-libxdmcp             1.1.3                h7f98852_0    conda-forge
+xorg-libxext              1.3.4                h0b41bf4_2    conda-forge
+xorg-libxfixes            5.0.3             h7f98852_1004    conda-forge
+xorg-libxi                1.7.10               h4bc722e_1    conda-forge
+xorg-libxrender           0.9.11               hd590300_0    conda-forge
+xorg-libxt                1.3.0                hd590300_1    conda-forge
+xorg-libxtst              1.2.5                h4bc722e_0    conda-forge
+xorg-libxxf86vm           1.1.5                h4bc722e_1    conda-forge
+xorg-recordproto          1.14.2            h7f98852_1002    conda-forge
+xorg-renderproto          0.11.1            h7f98852_1002    conda-forge
+xorg-xextproto            7.3.0             h0b41bf4_1003    conda-forge
+xorg-xproto               7.0.31            h7f98852_1007    conda-forge
+xz                        5.2.6                h166bdaf_0    conda-forge
+zlib                      1.3.1                h4ab18f5_1    conda-forge
+zstd                      1.5.6                ha6fb4c9_0    conda-forge
+Skipping '-' which didn't exist, or couldn't be read
+Skipping 'o' which didn't exist, or couldn't be read
+null
+Failed to process ./FastQC_Output
+java.io.FileNotFoundException: ./FastQC_Output (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.<init>(FastQFile.java:77)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:106)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:62)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.processFile(OfflineRunner.java:163)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.<init>(OfflineRunner.java:125)
+	at uk.ac.babraham.FastQC.FastQCApplication.main(FastQCApplication.java:316)
+application/gzip
+Started analysis of Undetermined_S0_L008_R1_001.fastq.gz
+Approx 5% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 10% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 15% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 20% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 25% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 30% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 35% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 40% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 45% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 50% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 55% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 60% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 65% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 70% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 75% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 80% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 85% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 90% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Approx 95% complete for Undetermined_S0_L008_R1_001.fastq.gz
+Analysis complete for Undetermined_S0_L008_R1_001.fastq.gz
+Failed to process file Undetermined_S0_L008_R1_001.fastq.gz
+java.io.FileNotFoundException: /projects/bgmp/shared/2017_sequencing/demultiplexed/Undetermined_S0_L008_R1_001_fastqc.zip (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at uk.ac.babraham.FastQC.Report.HTMLReportArchive.<init>(HTMLReportArchive.java:80)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.analysisComplete(OfflineRunner.java:189)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:123)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Command exited with non-zero status 1
+	Command being timed: "fastqc - o ./FastQC_Output /projects/bgmp/shared/2017_sequencing/demultiplexed/Undetermined_S0_L008_R1_001.fastq.gz"
+	User time (seconds): 55.08
+	System time (seconds): 3.00
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:00.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 273172
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43236
+	Voluntary context switches: 9282
+	Involuntary context switches: 216
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 448
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Skipping '-' which didn't exist, or couldn't be read
+Skipping 'o' which didn't exist, or couldn't be read
+null
+Failed to process ./FastQC_Output
+java.io.FileNotFoundException: ./FastQC_Output (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.<init>(FastQFile.java:77)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:106)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:62)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.processFile(OfflineRunner.java:163)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.<init>(OfflineRunner.java:125)
+	at uk.ac.babraham.FastQC.FastQCApplication.main(FastQCApplication.java:316)
+application/gzip
+Started analysis of Undetermined_S0_L008_R2_001.fastq.gz
+Approx 5% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 10% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 15% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 20% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 25% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 30% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 35% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 40% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 45% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 50% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 55% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 60% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 65% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 70% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 75% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 80% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 85% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 90% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Approx 95% complete for Undetermined_S0_L008_R2_001.fastq.gz
+Analysis complete for Undetermined_S0_L008_R2_001.fastq.gz
+Failed to process file Undetermined_S0_L008_R2_001.fastq.gz
+java.io.FileNotFoundException: /projects/bgmp/shared/2017_sequencing/demultiplexed/Undetermined_S0_L008_R2_001_fastqc.zip (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at uk.ac.babraham.FastQC.Report.HTMLReportArchive.<init>(HTMLReportArchive.java:80)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.analysisComplete(OfflineRunner.java:189)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:123)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Command exited with non-zero status 1
+	Command being timed: "fastqc - o ./FastQC_Output /projects/bgmp/shared/2017_sequencing/demultiplexed/Undetermined_S0_L008_R2_001.fastq.gz"
+	User time (seconds): 56.08
+	System time (seconds): 3.17
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:59.22
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 272552
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 36419
+	Voluntary context switches: 8755
+	Involuntary context switches: 155
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 448
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Skipping '-' which didn't exist, or couldn't be read
+Skipping 'o' which didn't exist, or couldn't be read
+null
+Failed to process ./FastQC_Output
+java.io.FileNotFoundException: ./FastQC_Output (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.<init>(FastQFile.java:77)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:106)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:62)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.processFile(OfflineRunner.java:163)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.<init>(OfflineRunner.java:125)
+	at uk.ac.babraham.FastQC.FastQCApplication.main(FastQCApplication.java:316)
+application/gzip
+Started analysis of 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 5% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 10% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 15% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 20% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 25% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 30% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 35% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 40% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 45% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 50% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 55% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 60% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 65% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 70% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 75% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 80% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 85% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 90% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Approx 95% complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Analysis complete for 7_2E_fox_S6_L008_R1_001.fastq.gz
+Failed to process file 7_2E_fox_S6_L008_R1_001.fastq.gz
+java.io.FileNotFoundException: /projects/bgmp/shared/2017_sequencing/demultiplexed/7_2E_fox_S6_L008_R1_001_fastqc.zip (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at uk.ac.babraham.FastQC.Report.HTMLReportArchive.<init>(HTMLReportArchive.java:80)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.analysisComplete(OfflineRunner.java:189)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:123)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Command exited with non-zero status 1
+	Command being timed: "fastqc - o ./FastQC_Output /projects/bgmp/shared/2017_sequencing/demultiplexed/7_2E_fox_S6_L008_R1_001.fastq.gz"
+	User time (seconds): 20.26
+	System time (seconds): 0.98
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 268052
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 27415
+	Voluntary context switches: 3871
+	Involuntary context switches: 81
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Skipping '-' which didn't exist, or couldn't be read
+Skipping 'o' which didn't exist, or couldn't be read
+null
+Failed to process ./FastQC_Output
+java.io.FileNotFoundException: ./FastQC_Output (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.<init>(FastQFile.java:77)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:106)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:62)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.processFile(OfflineRunner.java:163)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.<init>(OfflineRunner.java:125)
+	at uk.ac.babraham.FastQC.FastQCApplication.main(FastQCApplication.java:316)
+application/gzip
+Started analysis of 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 5% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 10% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 15% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 20% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 25% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 30% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 35% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 40% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 45% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 50% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 55% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 60% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 65% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 70% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 75% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 80% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 85% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 90% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Approx 95% complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Analysis complete for 7_2E_fox_S6_L008_R2_001.fastq.gz
+Failed to process file 7_2E_fox_S6_L008_R2_001.fastq.gz
+java.io.FileNotFoundException: /projects/bgmp/shared/2017_sequencing/demultiplexed/7_2E_fox_S6_L008_R2_001_fastqc.zip (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at uk.ac.babraham.FastQC.Report.HTMLReportArchive.<init>(HTMLReportArchive.java:80)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.analysisComplete(OfflineRunner.java:189)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:123)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Command exited with non-zero status 1
+	Command being timed: "fastqc - o ./FastQC_Output /projects/bgmp/shared/2017_sequencing/demultiplexed/7_2E_fox_S6_L008_R2_001.fastq.gz"
+	User time (seconds): 20.78
+	System time (seconds): 1.17
+	Percent of CPU this job got: 103%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 276492
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 30601
+	Voluntary context switches: 3846
+	Involuntary context switches: 104
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

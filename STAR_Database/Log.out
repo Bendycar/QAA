@@ -1,0 +1,224 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-07-03T14:39:20+0000 :/opt/conda/conda-bld/star_1720017372352/work/source
+##### Command Line:
+/projects/bgmp/bcarr/miniforge3/envs/QAA/bin/STAR-avx2 --runThreadN 8 --runMode genomeGenerate --genomeDir /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database --genomeFastaFiles /home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa --sjdbGTFfile /home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.112.gtf
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    8     ~RE-DEFINED
+runMode                       genomeGenerate        ~RE-DEFINED
+genomeDir                     /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database     ~RE-DEFINED
+genomeFastaFiles              /home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa        ~RE-DEFINED
+sjdbGTFfile                   /home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.112.gtf     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate   
+runThreadN                        8
+genomeDir                         /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database
+genomeFastaFiles                  /home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa   
+sjdbGTFfile                       /home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.112.gtf
+
+-------------------------------
+##### Final effective command line:
+/projects/bgmp/bcarr/miniforge3/envs/QAA/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 8   --genomeDir /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database   --genomeFastaFiles /home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa      --sjdbGTFfile /home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.112.gtf
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+--genomeDir directory created: /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database/
+Sep 08 14:05:49 ... starting to generate Genome files
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 0  "1" chrStart: 0
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 1  "10" chrStart: 195297280
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 2  "11" chrStart: 325844992
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 3  "12" chrStart: 448004096
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 4  "13" chrStart: 568328192
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 5  "14" chrStart: 689438720
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 6  "15" chrStart: 814743552
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 7  "16" chrStart: 919076864
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 8  "17" chrStart: 1017118720
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 9  "18" chrStart: 1112539136
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 10  "19" chrStart: 1203503104
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 11  "2" chrStart: 1265106944
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 12  "3" chrStart: 1447034880
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 13  "4" chrStart: 1606942720
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 14  "5" chrStart: 1763966976
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 15  "6" chrStart: 1915748352
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 16  "7" chrStart: 2065432576
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 17  "8" chrStart: 2210660352
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 18  "9" chrStart: 2340945920
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 19  "MT" chrStart: 2465464320
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 20  "X" chrStart: 2465726464
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 21  "Y" chrStart: 2635333632
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 22  "JH584299.1" chrStart: 2726821888
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 23  "GL456233.2" chrStart: 2727870464
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 24  "JH584301.1" chrStart: 2728656896
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 25  "GL456211.1" chrStart: 2728919040
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 26  "GL456221.1" chrStart: 2729181184
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 27  "JH584297.1" chrStart: 2729443328
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 28  "JH584296.1" chrStart: 2729705472
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 29  "GL456354.1" chrStart: 2729967616
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 30  "JH584298.1" chrStart: 2730229760
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 31  "JH584300.1" chrStart: 2730491904
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 32  "GL456219.1" chrStart: 2730754048
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 33  "GL456210.1" chrStart: 2731016192
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 34  "JH584303.1" chrStart: 2731278336
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 35  "JH584302.1" chrStart: 2731540480
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 36  "GL456212.1" chrStart: 2731802624
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 37  "JH584304.1" chrStart: 2732064768
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 38  "GL456379.1" chrStart: 2732326912
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 39  "GL456366.1" chrStart: 2732589056
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 40  "GL456367.1" chrStart: 2732851200
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 41  "GL456239.1" chrStart: 2733113344
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 42  "GL456383.1" chrStart: 2733375488
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 43  "GL456385.1" chrStart: 2733637632
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 44  "GL456360.1" chrStart: 2733899776
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 45  "GL456378.1" chrStart: 2734161920
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 46  "MU069435.1" chrStart: 2734424064
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 47  "GL456389.1" chrStart: 2734686208
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 48  "GL456372.1" chrStart: 2734948352
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 49  "GL456370.1" chrStart: 2735210496
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 50  "GL456381.1" chrStart: 2735472640
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 51  "GL456387.1" chrStart: 2735734784
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 52  "GL456390.1" chrStart: 2735996928
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 53  "GL456394.1" chrStart: 2736259072
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 54  "GL456392.1" chrStart: 2736521216
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 55  "GL456382.1" chrStart: 2736783360
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 56  "GL456359.1" chrStart: 2737045504
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 57  "GL456396.1" chrStart: 2737307648
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 58  "GL456368.1" chrStart: 2737569792
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 59  "MU069434.1" chrStart: 2737831936
+/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa : chr # 60  "JH584295.1" chrStart: 2738094080
+Chromosome sequence lengths: 
+1	195154279
+10	130530862
+11	121973369
+12	120092757
+13	120883175
+14	125139656
+15	104073951
+16	98008968
+17	95294699
+18	90720763
+19	61420004
+2	181755017
+3	159745316
+4	156860686
+5	151758149
+6	149588044
+7	144995196
+8	130127694
+9	124359700
+MT	16299
+X	169476592
+Y	91455967
+JH584299.1	953012
+GL456233.2	559103
+JH584301.1	259875
+GL456211.1	241735
+GL456221.1	206961
+JH584297.1	205776
+JH584296.1	199368
+GL456354.1	195993
+JH584298.1	184189
+JH584300.1	182347
+GL456219.1	175968
+GL456210.1	169725
+JH584303.1	158099
+JH584302.1	155838
+GL456212.1	153618
+JH584304.1	114452
+GL456379.1	72385
+GL456366.1	47073
+GL456367.1	42057
+GL456239.1	40056
+GL456383.1	38659
+GL456385.1	35240
+GL456360.1	31704
+GL456378.1	31602
+MU069435.1	31129
+GL456389.1	28772
+GL456372.1	28664
+GL456370.1	26764
+GL456381.1	25871
+GL456387.1	24685
+GL456390.1	24668
+GL456394.1	24323
+GL456392.1	23629
+GL456382.1	23158
+GL456359.1	22974
+GL456396.1	21240
+GL456368.1	20208
+MU069434.1	8412
+JH584295.1	1976
+Genome sequence total length = 2728222451
+Genome size with padding = 2738356224
+Sep 08 14:06:27 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=/home/bcarr/bgmp/bioinfo/Bi623/QAA/Mus_musculus.GRCm39.112.gtf, found:
+		149194 transcripts
+		864295 exons (non-collapsed)
+		289580 collapsed junctions
+Total junctions: 289580
+Sep 08 14:06:35 ..... finished GTF processing
+
+Estimated genome size with padding and SJs: total=genome+SJ=2939356224 = 2738356224 + 201000000
+GstrandBit=32
+Number of SA indices: 5309243566
+Sep 08 14:06:40 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 24;   chunks size limit: 1914246544 bytes
+Sep 08 14:06:51 ... sorting Suffix Array chunks and saving them to disk...
+Writing 1761388056 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_1 ; empty space on disk = 851322714718208 bytes ... done
+Writing 1735971512 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_3 ; empty space on disk = 851320151998464 bytes ... done
+Writing 1854034976 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_0 ; empty space on disk = 851317320843264 bytes ... done
+Writing 1868710672 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_4 ; empty space on disk = 851314414190592 bytes ... done
+Writing 1832467656 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_2 ; empty space on disk = 851311889219584 bytes ... done
+Writing 1790148352 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_6 ; empty space on disk = 851306990272512 bytes ... done
+Writing 1836071784 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_5 ; empty space on disk = 851305094447104 bytes ... done
+Writing 1881135680 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_7 ; empty space on disk = 851309318111232 bytes ... done
+Writing 1787061616 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_9 ; empty space on disk = 851299700572160 bytes ... done
+Writing 1773261472 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_8 ; empty space on disk = 851297909604352 bytes ... done
+Writing 1738304216 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_10 ; empty space on disk = 851296131219456 bytes ... done
+Writing 1826940776 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_11 ; empty space on disk = 851294386388992 bytes ... done
+Writing 1869480048 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_12 ; empty space on disk = 851290196279296 bytes ... done
+Writing 1882586808 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_14 ; empty space on disk = 851288321425408 bytes ... done
+Writing 1882992120 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_13 ; empty space on disk = 851286438182912 bytes ... done
+Writing 1881806984 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_15 ; empty space on disk = 851284550746112 bytes ... done
+Writing 801751320 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_23 ; empty space on disk = 851281044307968 bytes ... done
+Writing 1581660584 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_21 ; empty space on disk = 851278653554688 bytes ... done
+Writing 1707621360 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_20 ; empty space on disk = 851277068107776 bytes ... done
+Writing 1843649328 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_18 ; empty space on disk = 851275356831744 bytes ... done
+Writing 1887742128 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_16 ; empty space on disk = 851273511337984 bytes ... done
+Writing 1775408048 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_19 ; empty space on disk = 851271619706880 bytes ... done
+Writing 1910082552 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_17 ; empty space on disk = 851269841321984 bytes ... done
+Writing 1763670480 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA_22 ; empty space on disk = 851267928719360 bytes ... done
+Sep 08 14:15:42 ... loading chunks from disk, packing SA...
+Sep 08 14:16:39 ... finished generating suffix array
+Sep 08 14:16:39 ... generating Suffix Array index
+Sep 08 14:19:15 ... completed Suffix Array index
+WARNING: long repeat for junction # 65645 : 13 36192501 36373186; left shift = 255; right shift = 29
+WARNING: long repeat for junction # 73353 : 13 119631671 120070727; left shift = 36; right shift = 255
+WARNING: long repeat for junction # 90022 : 15 75976552 75988902; left shift = 0; right shift = 255
+WARNING: long repeat for junction # 200336 : 5 112922393 112922883; left shift = 255; right shift = 69
+WARNING: long repeat for junction # 202737 : 5 123328298 123329023; left shift = 255; right shift = 19
+WARNING: long repeat for junction # 211984 : 6 48731569 48732130; left shift = 81; right shift = 255
+WARNING: long repeat for junction # 244212 : 7 141361933 141364041; left shift = 255; right shift = 255
+Sep 08 14:19:15   Finished preparing junctions
+Sep 08 14:19:15 ..... inserting junctions into the genome indices
+Sep 08 14:20:00   Finished SA search: number of new junctions=289553, old junctions=0
+Sep 08 14:20:24   Finished sorting SA indicesL nInd=115821116
+Genome size with junctions=2796556377  2738356224   58200153
+GstrandBit1=32   GstrandBit=32
+Sep 08 14:21:14   Finished inserting junction indices
+Sep 08 14:21:30   Finished SAi
+Sep 08 14:21:30 ..... finished inserting junctions into genome
+Sep 08 14:21:30 ... writing Genome to disk ...
+Writing 2796556377 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//Genome ; empty space on disk = 851290745733120 bytes ... done
+SA size in bytes: 22378391817
+Sep 08 14:21:31 ... writing Suffix Array to disk ...
+Writing 22378391817 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SA ; empty space on disk = 851287943938048 bytes ... done
+Sep 08 14:21:36 ... writing SAindex to disk
+Writing 8 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SAindex ; empty space on disk = 851265563131904 bytes ... done
+Writing 120 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SAindex ; empty space on disk = 851265563131904 bytes ... done
+Writing 1565873491 bytes into /home/bcarr/bgmp/bioinfo/Bi623/QAA/STAR_Database//SAindex ; empty space on disk = 851265563131904 bytes ... done
+Sep 08 14:21:37 ..... finished successfully
+DONE: Genome generation, EXITING
